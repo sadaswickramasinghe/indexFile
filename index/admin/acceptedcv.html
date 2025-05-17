@@ -1,0 +1,158 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLTMOBITEL Training Program</title>
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <div class="bg-container">
+        <header>
+            <div class="logo">
+                <img src="/images/logo.png" alt="SLTMOBITEL Logo">
+                <h2>Training Program</h2>
+            </div>
+        
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+        
+            <nav id="nav-menu" class="nav-menu">
+                <a href="/home.html">Home</a>
+                <a href="#">Logout</a>
+            </nav>
+        </header>
+        
+        <div class="container">
+            <button id="sidebarToggle" class="sidebar-toggle">☰ Menu</button>
+
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="jobcreation.html">Job Creation</a></li>
+                    <li><a href="jobmodification.html">Job Modification</a></li>
+                    <li><a href="receivedcv.html">Received CVs</a></li>
+                    <li><a href="acceptedcv.html" class="active">Accepted CVs</a></li>
+                </ul>
+            </aside>
+
+            <div class="job-form">
+                <h3>Accepted CVs</h3>
+                <div class="table-responsive">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Job Title</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Field</th>
+                                <th>Contact Number</th>
+                                <th>CV</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Developer</td>
+                                <td>Kasun</td>
+                                <td>Male</td>
+                                <td>IT</td>
+                                <td>077 1234567</td>
+                                <td><a href="cv/don.pdf" download>don.pdf</a></td>
+                            </tr>
+                            <tr>
+                                <td>Network Engineer</td>
+                                <td>Nimali</td>
+                                <td>Female</td>
+                                <td>IT</td>
+                                <td>076 9876543</td>
+                                <td><a href="cv/jon.pdf" download>jon.pdf</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            
+            </div>
+            
+
+        <footer>
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p><a href="#">Corporate Responsibility</a></p>
+                <p><a href="#">Investors</a></p>
+                <p><a href="#">Media Center</a></p>
+                <p><a href="#">Careers</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Business</h4>
+                <p><a href="#">Enterprise</a></p>
+                <p><a href="#">SME</a></p>
+                <p><a href="#">Wholesale</a></p>
+                <p><a href="#">International</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Sri Lanka Telecom PLC, Lotus Road, P.O. Box 503, Colombo 01 Sri Lanka</p>
+                <p>Telephone: +94 112 021 000</p>
+                <p>Email: <a href="mailto:pr@slt.lk">pr@slt.lk</a></p>
+                <p>Monday to Friday - 8am to 5pm</p>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Support</h4>
+                <p>Telephone: <a href="tel:1212">1212</a></p>
+                <p>Email: <a href="mailto:1212@slt.lk">1212@slt.lk</a></p>
+                <p>Self Service: <a href="tel:*1212#">*1212# 1212</a></p>
+            </div>
+            <div class="footer-section social-icons">
+                <a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/instagram-new.png" alt="Instagram"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/youtube-play.png" alt="YouTube"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/tiktok.png" alt="TikTok"></a>
+            </div>
+        </footer>
+        <button class="scroll-to-top" onclick="scrollToTop()">&#8679;</button>
+        <script>
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+        
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        </script>
+        
+        <script>
+            const toggle = document.getElementById('sidebarToggle');
+            const sidebar = document.querySelector('.sidebar');
+        
+            toggle.addEventListener('click', () => {
+                sidebar.classList.toggle('active');
+            });
+        </script>
+
+        <script>
+            const searchInput = document.getElementById('searchInput');
+            const tableRows = document.querySelectorAll('#jobTableBody tr');
+        
+            searchInput.addEventListener('input', function() {
+                const query = this.value.toLowerCase();
+                tableRows.forEach(row => {
+                    const rowText = row.innerText.toLowerCase();
+                    row.style.display = rowText.includes(query) ? '' : 'none';
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

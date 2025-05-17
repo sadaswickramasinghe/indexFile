@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register Page</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="image-box">
+      <img src="images/sign.png" alt="Register illustration" />
+    </div>
+    <div class="login-box">
+      <h2>Register</h2>
+      <form>
+        <div class="form-group">
+          <label for="userid"><i class="fas fa-user"></i> User ID</label>
+          <input type="text" id="userid" placeholder="Enter your user ID" required />
+        </div>
+
+        <div class="form-group">
+          <label for="name"><i class="fas fa-address-card"></i> Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password"><i class="fas fa-lock"></i> Password</label>
+          <input type="password" id="password" placeholder="Create a password" required />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password"><i class="fas fa-lock"></i> Confirm Password</label>
+          <input type="password" id="confirm-password" placeholder="Confirm your password" required />
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p class="signup-text">
+        Already have an account? <a href="login.html">Login</a>
+      </p>
+
+      <div class="social-login">
+        <span>──────── OR ────────</span>
+        <div class="icons">
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

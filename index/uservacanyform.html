@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLTMOBITEL Training Program</title>
+  <link rel="stylesheet" href="css/jobinfo.css" />
+
+   
+</head>
+<body>
+    <div class="bg-container">
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="SLTMOBITEL Logo">
+                <h2>Training Program</h2>
+            </div>
+        
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Hamburger Icon (☰) -->
+            </div>
+        
+            <nav id="nav-menu" class="nav-menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="uservacanyform.html">Vacancies</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </header>
+
+        <section class="bg-section">
+        </section>
+        <section class="job-form-section">
+            <form class="job-form">
+              <div class="form-group">
+                <label>Job Title:</label>
+                <span>Web Development Trainee</span>
+              </div>
+          
+              <div class="form-group">
+                <label for="initials">Name with Initials:</label>
+                <input type="text" id="initials" name="initials" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                  <option value="">Select</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="field">Field:</label>
+                <select id="field" name="field" required>
+                  <option value="">Select</option>
+                  <option>Frontend</option>
+                  <option>Backend</option>
+                  <option>Full Stack</option>
+                  <option>UI/UX</option>
+                </select>
+              </div>
+          
+              <div class="form-group full">
+                <label>Upload your CV here:</label>
+                <div class="file-upload">
+                  <p>Drag&Drop files here<br><span>or</span></p>
+                  <input type="file" name="cv">
+                  <button type="button">Browse Files</button>
+                </div>
+              </div>
+          
+              <div class="form-group full submit-btn">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </section>
+          
+
+    <footer>
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p><a href="#">Corporate Responsibility</a></p>
+            <p><a href="#">Investors</a></p>
+            <p><a href="#">Media Center</a></p>
+            <p><a href="#">Careers</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Business</h4>
+            <p><a href="#">Enterprise</a></p>
+            <p><a href="#">SME</a></p>
+            <p><a href="#">Wholesale</a></p>
+            <p><a href="#">International</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Sri Lanka Telecom PLC, Lotus Road, P.O. Box 503, Colombo 01 Sri Lanka</p>
+            <p>Telephone: +94 112 021 000</p>
+            <p>Email: <a href="mailto:pr@slt.lk">pr@slt.lk</a></p>
+            <p>Monday to Friday - 8am to 5pm</p>
+        </div>
+        <div class="footer-section">
+            <h4>Customer Support</h4>
+            <p>Telephone: <a href="tel:1212">1212</a></p>
+            <p>Email: <a href="mailto:1212@slt.lk">1212@slt.lk</a></p>
+            <p>Self Service: <a href="tel:*1212#">*1212# 1212</a></p>
+        </div>
+        <div class="footer-section social-icons">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/instagram-new.png" alt="Instagram"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/youtube-play.png" alt="YouTube"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/tiktok.png" alt="TikTok"></a>
+        </div>
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">&#8679;</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+    
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
